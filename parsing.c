@@ -64,5 +64,8 @@ int main(int argc, char** argv) {
     free(input);
   }
 
+  /* Undefine and Delete our Parsers */
+  mpc_cleanup(4, Number, Operator, Expr, Lispy);
+
   return 0;
 }
